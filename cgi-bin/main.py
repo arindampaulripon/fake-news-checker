@@ -37,7 +37,7 @@ for node in soup.findAll('h3'):
     
     
     print(rs1)
-    print("</br>")
+    print("<br \>")
 
 url3 = ('https://www.youtube.com/results?search_query='+q)
 r3 = requests.get(url3)
