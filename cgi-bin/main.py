@@ -33,7 +33,7 @@ print("</h2>")
 
 print("</br>")
 
-URL = "https://www.google.com/search?q={}&num={}&hl={}".format(escaped_search_term, number_results, language_code)
+URL = "https://search.yahoo.com/search?p={}&num={}&hl={}".format(escaped_search_term, number_results, language_code)
 r = requests.get(URL)
 soup = BeautifulSoup(r.content, 'html.parser')
 print("<h2>")
