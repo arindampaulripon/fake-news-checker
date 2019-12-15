@@ -33,7 +33,7 @@ print("</h2>")
 
 print("</br>")
 
-URL = ("https://search.yahoo.com/search?p="+q)
+URL = ("http://search.yahoo.com/search?p="+q)
 r = requests.get(URL)
 soup = BeautifulSoup(r.content, 'html.parser')
 print("<h2>")
