@@ -33,7 +33,7 @@ print("</h2>")
 
 print("</br>")
 
-URL = ("http://search.yahoo.com/search?p="+q&fr=yfp-t&fr=yfp-t-s&fp=1&toggle=1&cop=mss&ei=UTF-8)
+URL = ("https://search.yahoo.com/search?p="+q)
 r = requests.get(URL)
 soup = BeautifulSoup(r.content, 'html.parser')
 print("<h2>")
@@ -82,7 +82,7 @@ print("</br>")
 print("</h2>")
 
 
-for node in soup.findAll('cite'):
+for node in soup.findAll('span'):
     print("<ul>")
     print("<li>")
     print (''.join(node.findAll(text=True))).encode("utf-8")
