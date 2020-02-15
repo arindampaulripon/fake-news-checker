@@ -33,7 +33,7 @@ print("</h2>")
 
 print("</br>")
 
-URL = ("https://search.yahoo.com/search?p="+q)
+URL = ("http://search.yahoo.com/search?p="+q)
 r = requests.get(URL)
 soup = BeautifulSoup(r.content, 'html.parser')
 print("<h2>")
@@ -55,7 +55,7 @@ for node in soup.findAll('h3'):
     
 
     
-url3 = ('https://www.youtube.com/results?search_query='+q)
+url3 = ('http://www.youtube.com/results?search_query='+q)
 r3 = requests.get(url3)
 soup3 = BeautifulSoup(r3.content, 'html.parser') 
 print("<h2>")
