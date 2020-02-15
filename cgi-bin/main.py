@@ -1,4 +1,4 @@
-#!C:/Users/i7/Anaconda3/python.exe
+
 import cgi, cgitb
 import string
 import requests 
