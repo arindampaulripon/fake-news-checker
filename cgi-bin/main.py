@@ -16,7 +16,7 @@ print("<!DOCTYPE html>")
 print("<html>")
 print("<head>")
 
-print("<link rel='stylesheet' type='text/css' href='../EasterSS.css'/></head>")
+#print("<link rel='stylesheet' type='text/css' href='../EasterSS.css'/></head>")
 print("<body>")
 print("<h2>")
 print ("Hi, Now you're seeing the top 100 google result at once")
@@ -25,7 +25,7 @@ print("</br>")
 q = form.getvalue('search')
 escaped_search_term = q
 
-number_results = 100
+number_results = 20
 language_code = 'en'
 print("<h2>")
 print ("You Searched For ",q)
